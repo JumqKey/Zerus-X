@@ -1,0 +1,74 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Zerus X", HidePremium = false, SaveConfig = true, ConfigFolder = "Zerus Test"})
+
+local Tab = Window:MakeTab({
+	Name = "Test",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "ESP"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+OrionLib:MakeNotification({
+	Name = "Zerus X",
+	Content = "Thanks for using Zerus X!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+Tab:AddButton({
+	Name = "ESP",
+	Callback = function()
+   loadstring(game:HttpsGet(('rbxassetid://574594561')[1].Source)()
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+local Section = Tab:AddSection({
+	Name = "Other Scripts"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Infinite Yeld",
+	Callback = function()
+   loadstring(game:HttpsGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+      		print("button pressed")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "DEX",
+	Callback = function()
+   loadstring(game:HttpsGet(('https://pastebin.com/raw/Ht4zRXj8'),true))()
+
+      		print("button pressed")
+  	end    
+})
